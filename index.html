@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86aea117e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>TPO - Home</title>
+</head>
+<body>
+
+   
+    <nav id="navigationbar" class="nav"></nav>
+
+
+    <main>
+        <section class="banner-section fade-in-image">
+            <div class="wrapper">
+                <p class="banner__text">
+                    Armá la mochila y preparate para tu próxima aventura
+                </p>
+            </div>
+        </section>
+        <section class="weather-info">
+            <p>Clima en Argentina: </p>
+            <p class="weather__item">
+                    <i class="fa-solid fa-temperature-empty"></i>
+                    <span id="temperature"></span>
+            </p>
+            <p class="weather__item">
+                <i class="fa-solid fa-wind"></i>
+                <span id="wind"></span>
+            </p>
+        </section>
+        <section class="activities-section">
+            <div class="wrapper">
+                <p class="activities-section__title">Próximas salidas</p>
+                <article id="app" class="activities-wrapper">
+                    <div class="card" v-for="act in activities">
+                      <img class="card__img" :src="act.imagen" alt="foto">
+                      <div class="card__info">
+                        <p class="card__title">{{act.titulo}}</p>
+                        <p class="card__subtitle"><span>Dificultad: </span>{{act.dificultad}}</p>
+                        <p class="card__date"><span>Fecha: </span>{{act.fecha}}</p>
+                        <p><span>Duración: </span>{{act.duracion}}</p>
+                      </div>
+                      <a class="btn" href="">Más información</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="wrapper">
+                <p class="contact-section__title">Contactanos</p>
+                <div class="contact-section__content">
+                    <form id="form" class="contact-section__form" @submit.prevent="checkForm" @submit="submitForm" action="" method="post">
+        
+                        <div v-if="submitted === true">
+                            <div v-if="hasErrors" class="error">
+                                <strong>Se han producido los siguientes errores:</strong>
+                                <span v-for="error in errors" class="error-individual">{{ error }}</span>  
+                            </div>
+                            <div v-else class="correcto">
+                                <strong>Su consulta ha sido enviada!</strong>
+                            </div>
+                        </div>
+            
+                        <div class="input-form">
+                            <label for="name">Nombre</label>                
+                            <input type="text" name="name" v-model="name">
+                        </div>
+            
+                        <div class="input-form">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" v-model="email">
+                        </div>
+    
+                        <div class="input-form">
+                            <label for="msg" >Mensaje:</label>
+                            <textarea name="msg" rows="10" cols="40"></textarea>
+                        </div>
+            
+                        <div class="contact-section__form-submit">
+                            <input type="submit" value="Enviar consulta" />
+                        </div>
+                    </form>
+                    <img class="contact-section__img" src="img/bg-contact.jpg" alt="">           
+                </div>
+            </div>
+
+            <script src="js/form.js"></script>
+
+
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

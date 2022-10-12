@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86aea117e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/quienessomos.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>TPO - Quienes somos</title>
+</head>
+<body>
+
+    <nav id="navigationbar" class="nav"></nav>
+
+    <main>
+        <section class="whoweare-banner-section">
+            <div class="wrapper">
+                <p class="banner__text">
+                    Conocenos
+                </p>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="wrapper">
+                <p class="team-section__title">El equipo</p>
+                <article id="app" class="team-wrapper fade-in-image">
+                    <div class="card" v-for="p in people">
+                        <div class="team-card">
+                            <img class="team-card__img" :src="p.imagen" alt="" />
+                            <div class="team-card__info">
+                                <p class="team-card__title">{{p.nombre}}</p>
+                                <p class="team-card__subtitle">{{p.posicion}}</p>
+                            </div>
+                        </div>
+                      </div>
+                </article>
+            </div>
+        </section>
+        <section class="whychosseus-section">
+            <div class="wrapper">
+                <p class="whychosseus-section__title">Por que elegirnos</p>
+                <article class="whychosseus-wrapper">
+                    <div class="whychosseus-item">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <p class="whychosseus-item__title"> Aliquam erat volutpat. Praesent ultricies, leo facilisis porta faucibus, lorem est fermentum augue, sit amet suscipit magna justo et sapien.</p>
+                    </div>
+                    <div class="whychosseus-item">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="whychosseus-item__title">Nunc a elementum ex. Donec ultricies ex quis urna ultrices vestibulum. Nulla luctus eu augue ac luctus. Pellentesque pharetra lacus vel tellus placerat molestie.</p>
+                    </div>
+                    <div class="whychosseus-item">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p class="whychosseus-item__title">Maecenas dignissim dapibus sem sed mollis. Suspendisse egestas eros nec turpis rhoncus, nec consequat ante tincidunt. Quisque non lobortis ex.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="reviews-section">
+            <div class="wrapper">
+                <p class="reviews-section__title">Reviews</p>
+                <article class="reviews-wrapper">
+                    <div class="reviews-wrapper__review">
+                        <p>"Suspendisse accumsan malesuada neque nec lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet iaculis leo, id lacinia lacus."</p>
+                        <p>Test User</p>
+                        <div class="reviews-wrapper__rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="reviews-wrapper__review">
+                        <p>"Suspendisse accumsan malesuada neque nec lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet iaculis leo, id lacinia lacus."</p>
+                        <p>Test User</p>
+                        <div class="reviews-wrapper__rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <img class="team-card__img" src="img/logo-tripadvisor.svg" alt="" />
+                </article>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/main.js"></script>
+    <script src="js/quienessomos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+/*
+    GENERAL STYLES
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+
+input[type$="text"],
+input[type$="email"],
+textarea {
+    width: 100%;
+    border: 1px solid #CDCDCD;
+    padding: 0.8rem;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section[class$="-section"] {
+    padding: 2rem 0.5rem;
+    box-sizing: border-box;
+}
+
+p[class$="section__title"] {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wrapper {
+    max-width:1020px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #000000;
+    border: 0.1rem solid #000000;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #FFFFFF;
+    border: 0.1rem solid #000000;
+    color: #000000;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/*
+    NAVIGATION BAR
+*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-logo {
+    width: 15rem;
+}
+
+.nav-bar {
+    list-style: none;
+    font-weight: 700;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.nav-bar__btn {
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.nav-bar__btn--active {
+    text-decoration: underline;
+}
+
+/*
+    MAIN SECTION
+*/
+.banner-section {
+    background-image: url('../img/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+}
+
+.banner__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 37rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+/*
+    FOOTER
+*/
+.footer-section {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-wrapper {
+        display: block;
+    }
+}
+
+.footer__legend {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.footer__social-network-btn {
+    padding: 0.2rem;
+    color: #FFFFFF;
+}
+
+/* our break points
+mobile
+@media (max-width: 768px) { ... }
+
+tablet
+@media (max-width: 1200px) { ... }
+
+desktop and more
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+.fade-in-image {
+    animation: fadeIn 3s;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
