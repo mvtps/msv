@@ -1,5 +1,5 @@
 
-/*
+/* Weather API Rest */
 let URL = "https://goweather.herokuapp.com/weather/Argentina" ; 
 fetch(URL)
 .then(res => res.json())
@@ -9,7 +9,7 @@ fetch(URL)
     document.getElementById("temperature").innerHTML = JSON.parse(temp);
     document.getElementById("wind").innerHTML = JSON.parse(wind)
  });
-*/
+
 app=new Vue({
   el:"#app",
   data:{
