@@ -1,0 +1,46 @@
+.faqs-banner-section {
+    background-image: url('../img/faq.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+}
+
+.faqs-banner-section .banner__text {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .faqs-banner-section {
+        height: 15rem;
+    }
+}
+
+.faqs-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 37rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+}
+
+.faqs-section {
+    margin: 0 auto;   
+}
+
+.faqs-pregunta {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.rem;
+    text-align: justify;
+    margin-bottom: 1rem
+}
+
+.faqs-respuesta { 
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.3;
+}
