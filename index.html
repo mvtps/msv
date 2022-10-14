@@ -14,7 +14,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <title>TPO - Home</title>
+    <title>MSV - Home</title>
 </head>
 <body>
 
@@ -53,7 +53,7 @@
                         <p class="card__date"><span>Fecha: </span>{{act.fecha}}</p>
                         <p><span>Duración: </span>{{act.duracion}}</p>
                       </div>
-                      <a class="btn" href="">Más información</a>
+                      <a class="btn" :href="'actividades.html#' + act.url">Más información</a>
                     </div>
                 </article>
             </div>
