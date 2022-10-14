@@ -19,21 +19,24 @@ app=new Vue({
         titulo:"Trekking Cordoba",
         dificultad:"Media",
         fecha:"12/10",
-        duracion: "5 dias"
+        duracion: "5 dias",
+       url:"trekking"
       },
       {
         imagen:"img/actitivitie-kayak.jpg",
         titulo:"Kayak Madryn",
         dificultad:"Alta",
         fecha:"30/11",
-        duracion: "2 dias"
+        duracion: "2 dias",
+        url:"kayak"
       },  
       {
         imagen:"img/actitivitie-climbing.jpg",
         titulo:"Escalada Mendoza",
         dificultad:"Fácil",
         fecha:"20/12",
-        duracion: "1 día"
+        duracion: "1 día",
+       url:"escalada"
       }
     ]
   }  
