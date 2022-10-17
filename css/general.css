@@ -130,9 +130,10 @@ p[class$="section__title"] {
 .banner__text {
     text-transform: uppercase;
     font-weight: 700;
-    max-width: 37rem;
     font-size: 2.5rem;
     text-align: center;
+    opacity: 0.6;
+    background-color: #FFFFFF;
     padding: 5rem;
 }
 
