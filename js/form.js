@@ -4,6 +4,7 @@ let validar = new Vue ({
         errors: [],
         name: null,
         email: null,
+        msg: null,
         submitted: false,
         expression: /\w+@\w+\.+[a-z]/
     },
@@ -31,7 +32,8 @@ let validar = new Vue ({
         },
         submitForm(){
             this.name = '',
-            this.email = ''  
+            this.email = '',
+            this.msg = ''  
         }
         
     }  
