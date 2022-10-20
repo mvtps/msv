@@ -28,8 +28,8 @@ section[class$="-section"] {
 }
 
 @media only screen and (max-width: 1200px) {
-    .banner__text {
-        padding: 2rem 3rem;
+     section[class$="-section"] {
+        padding: 2rem 1.5rem;
     }
 }
 
@@ -146,6 +146,7 @@ p[class$="section__title"] {
 @media only screen and (max-width: 768px) {
     .banner__text {
         padding: 3rem;
+        font-size: 1.5rem;
     }
 }
 
