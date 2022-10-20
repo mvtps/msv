@@ -27,6 +27,12 @@ section[class$="-section"] {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1200px) {
+    .banner__text {
+        padding: 2rem 3rem;
+    }
+}
+
 p[class$="section__title"] {
     font-size: 2rem;
     text-transform: uppercase;
@@ -135,6 +141,12 @@ p[class$="section__title"] {
     opacity: 0.6;
     background-color: #FFFFFF;
     padding: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner__text {
+        padding: 3rem;
+    }
 }
 
 /*
