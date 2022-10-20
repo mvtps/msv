@@ -86,6 +86,14 @@ p.whychosseus-item__title {
     .reviews-wrapper {
         text-align: center;
     }
+    
+    .reviews-wrapper__review {
+        margin-bottom: 1rem;
+    }
+    
+    .whychosseus-item {
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
