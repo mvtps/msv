@@ -24,6 +24,7 @@ let validar = new Vue ({
             
             if (!this.name) this.errors.push('Nombre requerido');
             if (!this.email) this.errors.push('Email requerido');
+            if (!this.msg) this.errors.push('Mensaje requerido');
             if (!this.expresion.test(this.email)) this.errors.push('Formato de email incorrecto');
 
             if (!this.errors.length) {
