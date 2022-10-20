@@ -37,18 +37,7 @@
     line-height: 1.5;
 }
 
-#img1{
-    float: left;  
-    margin-right: 3rem;
-}
-
-#img2{
-    float: right;   
-    margin-left: 3rem;
-}
-
-#img3{
-    float: left;
+.servicios-img { 
     margin-right: 3rem;
 }
 
@@ -62,10 +51,10 @@ h3.n-service {
     .kayak-servicio,
     .escalada-servicio,
     .trekking-servicio {
-       align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
     }
 
-    #img1, #img2, #img3{
-        display: none;
-    }
 }
