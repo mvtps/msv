@@ -5,7 +5,7 @@ Vue.js
 FontAwesome  
 Google Fonts  
 Sitio responsive   
-Animaciones y transiciones en botones  
+Transiciones en botones y banners
 API utilizada: https://goweather.herokuapp.com/weather/Argentina (clima en home)  
 
 ## Roles y Tareas
