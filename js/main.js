@@ -32,9 +32,9 @@ let footer=`
           </div>
       </div>
       <p class="footer_address">
-          123 Anywhere St.,<br>
-          Any City, ST 12345<br>
-          123-456-7890</p>
+          Av.Corrientes 1234<br>
+          Bs. As. 12345<br>
+          11 1234-5678</p>
       <p>info@tpocac.com</p>
   </div>
   </section>
