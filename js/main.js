@@ -26,16 +26,16 @@ let footer=`
           <p class="footer__legend">Hay demasiadas aventuras ahí afuera esperando ser vividas!</p>
           <div>
               <span class="footer__legend">Seguinos en nuestras redes</span>
-              <a href="" class="footer__social-network-btn"><i class="fa-brands fa-facebook fa-xl"></i></a>
-              <a href="" class="footer__social-network-btn"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
-              <a href="" class="footer__social-network-btn"><i class="fa-brands fa-instagram fa-xl"></i></a>
+              <a href="www.facebook.com" class="footer__social-network-btn"><i class="fa-brands fa-facebook fa-xl"></i></a>
+              <a href="www.twitter.com" class="footer__social-network-btn"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+              <a href="www.instagram.com" class="footer__social-network-btn"><i class="fa-brands fa-instagram fa-xl"></i></a>
           </div>
       </div>
       <p class="footer_address">
           Av.Corrientes 1234<br>
-          Bs. As. 12345<br>
+          Buenos Aires<br>
           11 1234-5678</p>
-      <p>info@tpocac.com</p>
+      <p>info@tpoviajes.com</p>
   </div>
   </section>
 `
