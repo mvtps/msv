@@ -27,9 +27,17 @@ section[class$="-section"] {
     box-sizing: border-box;
 }
 
+section[class$="-banner-section"] {
+   height:20rem;
+}
+
 @media only screen and (max-width: 1200px) {
      section[class$="-section"] {
         padding: 2rem 1.5rem;
+    }
+    
+    section[class$="-banner-section"] {
+       height:15rem;
     }
 }
 
