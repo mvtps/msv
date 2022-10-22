@@ -26,9 +26,9 @@ let footer=`
           <p class="footer__legend">Hay demasiadas aventuras ahí afuera esperando ser vividas!</p>
           <div>
               <span class="footer__legend">Seguinos en nuestras redes</span>
-              <a href="www.facebook.com" class="footer__social-network-btn"><i class="fa-brands fa-facebook fa-xl"></i></a>
-              <a href="www.twitter.com" class="footer__social-network-btn"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
-              <a href="www.instagram.com" class="footer__social-network-btn"><i class="fa-brands fa-instagram fa-xl"></i></a>
+              <a href="https://facebook.com" class="footer__social-network-btn"><i class="fa-brands fa-facebook fa-xl"></i></a>
+              <a href="https://twitter.com" class="footer__social-network-btn"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+              <a href="https://instagram.com" class="footer__social-network-btn"><i class="fa-brands fa-instagram fa-xl"></i></a>
           </div>
       </div>
       <p class="footer_address">
