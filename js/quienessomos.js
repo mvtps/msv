@@ -28,17 +28,17 @@ app=new Vue({
             posicion:"Asistente de guia"
         },
         {
-            imagen:"img/p6.png",
+            imagen:"img/p6.jpg",
             nombre:"Damian Perez",
             posicion:"Guia Sr"
         },
         {
-            imagen:"img/p7.png",
+            imagen:"img/p7.jpg",
             nombre:"Tomas Fon",
             posicion:"Asistente de guia Sr"
         },
         {
-            imagen:"img/p8.png",
+            imagen:"img/p8.jpg",
             nombre:"Adrian Jimenez",
             posicion:"Profesor escalada"
         }
